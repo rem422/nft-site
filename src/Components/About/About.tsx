@@ -12,7 +12,6 @@ const About = () => {
                         <div
                             key={card.userName}
                             className='flex items-center justify-start bg-white p-4 gap-6 shadow-xl w-full md:max-w-[300px] max-w-[400px] rounded-[20px]'
-                            data-aos='fade-up' data-aos-offset='200' data-aos-delay='100'
                         >
                             <div className='max-w-[80px]'>
                                 <img src={card.userImg} alt={card.userName}/>

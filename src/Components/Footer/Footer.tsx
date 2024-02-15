@@ -12,12 +12,11 @@ const Footer = () => {
         <footer className='bg-black py-20'>
             <div className="max-container">
                 <div className="flex items-center lg:items-start  justify-center lg:justify-between lg:flex-row flex-col gap-8 lg:gap-3">
-                    <div data-aos='fade-left' data-aos-offset='200' data-aos-delay='100'>
+                    <div>
                         <h1 className='text-white font-bold md:text-4xl text-3xl capitalize text-center lg:text-start'>Create, Explore & collect <br/> abstract NFTs</h1>
                     </div>
                     <div
                         className='flex items-center justify-center flex-col lg:items-end lg:justify-end gap-8'
-                        data-aos='fade-right' data-aos-offset='200' data-aos-delay='100'
                     >
                         <ul className='flex items-center flex-wrap gap-8 justify-center'>
                             {footerLinks.map((link) => (

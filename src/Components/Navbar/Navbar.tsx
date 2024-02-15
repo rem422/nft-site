@@ -41,7 +41,7 @@ const Navbar = () => {
                         {navLinks.map((item) => (
                             <li key={item.label}>
                                 <Link to={item.href}
-                                      className={'text-[1.2rem] hover:text-gray-700 transition-all duration-150'}
+                                      className={'text-[1.2rem] hover:text-gray-900 transition-all duration-150'}
                                 >
                                     {item.label}
                                 </Link>

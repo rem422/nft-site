@@ -18,24 +18,24 @@ export const navLinks = [
     {href: 'home', label:'Home'},
     {href: 'features', label:'Features'},
     {href: 'blog', label:'Blog'},
-    {href: 'about', label:'About Us'}
+    {href: 'about', label:'Sellers'}
 ]
 
 export const featuresCard = [
     {
         icon: <CiWallet style={{fontSize: '2rem'}}/>,
         title: 'Connect Wallet',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad corporis enim illum minima neque praesentium quam suscipit? Consequuntur, ipsa repudiandae.'
+        info: 'Check if the NFT marketplace seamlessly integrates with popular cryptocurrency wallets. A smooth integration enhances security and convenience for both artists and buyers.'
     },
     {
         icon: <CiShoppingCart style={{fontSize: '2rem'}}/>,
         title: 'NFT Marketplace',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad corporis enim illum minima neque praesentium quam suscipit? Consequuntur, ipsa repudiandae.'
+        info: 'The fastest and easiest way to fully unlock the potential of your digital assets. Create and run an exclusive marketplace for your NFT business today!.'
     },
     {
         icon: <AiOutlineAppstore style={{fontSize: '2rem'}}/>,
         title: 'Launch DApps',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad corporis enim illum minima neque praesentium quam suscipit? Consequuntur, ipsa repudiandae.'
+        info: 'The FIRST deflationary NFT Launchpad that offers Game changing IDOs and NDOs, no gas wars, fair distribution and FREE NFT airdrops of new and upcoming NFT projects.'
     },
 ]
 

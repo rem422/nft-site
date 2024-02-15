@@ -12,7 +12,6 @@ const Blog = () => {
                             <button
                                 key={btn.label}
                                 className='bg-gray-300 rounded-full py-2 px-4 hover:text-white hover:bg-blue-900 transition-all duration-300'
-                                data-aos='fade-up' data-aos-offset='200' data-aos-delay='100'
                             >
                                 {btn.label}
                             </button>
@@ -24,7 +23,6 @@ const Blog = () => {
                         <div
                             key={card.title}
                             className='bg-white shadow-xl p-5 rounded-[20px] gap-5 cursor-pointer hover:shadow-md transition-all duration-300'
-                            data-aos='fade-up' data-aos-offset='200' data-aos-delay='100'
                         >
                             <div className='max-w-[300px]'>
                                 <img
@@ -54,7 +52,6 @@ const Blog = () => {
                 <div className='flex items-center justify-center mt-14'>
                     <button
                         className='bg-gray-300 rounded-[10px] py-2 px-6 hover:text-white hover:bg-blue-600 transition-all duration-300'
-                        data-aos='fade-up' data-aos-offset='200' data-aos-delay='100'
                     >
                         View More
                     </button>

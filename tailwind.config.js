@@ -17,17 +17,7 @@ export default {
       "8xl": ["96px", "106px"],
     },
     extend: {
-      fontFamily: {
-        ubuntu: ["ubuntu", "sans-serif"],
-      },
     },
-    // colors: {
-    //   'blueNavy': '#0F2182',
-    //   'lightBlueNavy': '#0F21D2',
-    //   "slate-gray": "#6D6D6D",
-    //   "pale-blue": "#F5F6FF",
-    //   "white-400": "rgba(255, 255, 255, 0.80)",
-    // }
   },
   plugins: [],
 }
