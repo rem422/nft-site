@@ -122,3 +122,10 @@ export const aboutCards = [
         userLikes: '4.2k'
     },
 ]
+
+export const footerLinks = [
+    {href: '/', label:'Privacy Policy'},
+    {href: '/', label:'Cooperation'},
+    {href: '/', label:'Sponsorship'},
+    {href: '/', label:'Contact Us'}
+]

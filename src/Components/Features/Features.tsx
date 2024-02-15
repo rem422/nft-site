@@ -9,7 +9,7 @@ const Features = () => {
                 </div>
                 <div className='flex items-center justify-around md:flex-row flex-col gap-5'>
                     {featuresCard.map((item) =>(
-                        <div className='bg-white shadow-xl w-full max-w-[600px] py-6 px-4 rounded-[20px] hover:shadow-md transition-all duration-300 cursor-pointer'>
+                        <div className='bg-white shadow-xl w-full max-w-[600px] py-6 px-4 rounded-[20px] hover:shadow-md transition-all duration-300 cursor-pointer' data-aos='fade-up' data-aos-offset='200' data-aos-delay='100'>
                             <div key={item.title} className='flex items-center gap-2 font-semibold'>
                                 {item.icon}
                                 <h4>{item.title}</h4>

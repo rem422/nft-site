@@ -41,6 +41,7 @@ a {
 
 .nav_overlay.active {
     opacity: 1;
+    @apply lg:hidden
 }
 
 section {
@@ -53,9 +54,17 @@ section {
     }
 
     .navbar {
-        @apply fixed top-[58px] right-[-500%] bg-white h-full w-[60%] max-w-full p-6 transition-all duration-300 z-[999]
+        @apply bg-[#F1F1F1] fixed top-0 left-0 w-full py-[1rem] z-[999] transition-all duration-300
     }
-        .navbar.active {
+
+    .scrolled {
+        @apply shadow-md
+    }
+
+    .mobileNav  {
+        @apply fixed top-[58px] right-[-500%] bg-[#F1F1F1] h-full w-[50%] max-w-full p-6 transition-all duration-300 z-[999] lg:hidden
+    }
+        .active {
             @apply right-0
         }
 }

@@ -2,22 +2,39 @@ import { Link } from 'react-scroll'
 import { navLinks } from '../Constants/Constants'
 import { FiMenu, FiX} from "react-icons/fi";
 import Button from "../Button/Button";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
+    const [scrolled, setScrolled] = useState(false)
 
     const handleToggle = () => {
         setToggle(!toggle)
     };
 
+    const navScroll = () => {
+        if(window.scrollY > 30) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            navScroll()
+        })
+    })
+
+
+
     return (
-        <nav className='bg-white fixed top-0 left-0 w-full py-[1rem] z-[999]'>
+        <nav className={scrolled ? 'navbar scrolled' : 'navbar'}>
             <div className="max-container">
                 <div className='flex flex-1 items-center justify-between'>
                     <div>
-                        <Link to={'home'} className='text-2xl text-blue-900 font-bold'>NftSite</Link>
+                        <Link to={'home'} className='text-2xl text-blue-900 font-bold'>NftAsmr</Link>
                     </div>
                     <div className={toggle ? "nav_overlay active" : undefined} onClick={handleToggle}/>
                     <ul className='flex items-center gap-16 max-lg:hidden'>
@@ -45,12 +62,12 @@ const Navbar = () => {
                         {toggle ? <FiX/> : <FiMenu/>}
                     </div>
                     {/*  MOBILE MENU  */}
-                    <ul className={toggle ? 'navbar active' : 'navbar'}>
+                    <ul className={toggle ? 'mobileNav active' : 'mobileNav'}>
                         {navLinks.map((item) => (
                             <li key={item.label} className='mt-[2rem]'>
                                 <Link to={item.href}
-                                      className={'text-[1.2rem] hover:text-slate-gray transition-all duration-150'}
-                                      onClick={handleToggle}
+                                    className={'text-[1.2rem] hover:text-slate-gray transition-all duration-150'}
+                                    onClick={handleToggle}
                                 >
                                     {item.label}
                                 </Link>
